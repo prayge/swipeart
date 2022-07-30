@@ -10,7 +10,7 @@ import ContainerCard from "./Components/ContainerCard/ContainerCard";
 import Dropdown from "./Components/Elements/Dropdown/Dropdown";
 
 // import json files
-import images from "./Jsons/Images.json";
+import images from "./Jsons/Test.json";
 
 // App component
 const App = () => {
@@ -23,22 +23,7 @@ const App = () => {
     },
     {
       id: 2,
-      title: "Topic Images",
-      active: false,
-    },
-    {
-      id: 3,
-      title: "Nature Images",
-      active: false,
-    },
-    {
-      id: 4,
-      title: "NFT Images",
-      active: false,
-    },
-    {
-      id: 5,
-      title: "Space Images",
+      title: "Placeholder",
       active: false,
     },
   ];
