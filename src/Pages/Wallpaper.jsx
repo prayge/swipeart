@@ -1,19 +1,19 @@
 import { useState } from "react";
 
 // import styles of this component
-import styles from "./Home.module.css";
+import styles from "./Wallpaper.module.css";
 
 // import other components to use
-import Header from "./Components/Header/Header";
-import MasonryLayout from "./Components/MasonryLayout/MasonryLayout";
-import ContainerCard from "./Components/ContainerCard/ContainerCard";
-import Dropdown from "./Components/Elements/Dropdown/Dropdown";
+import Header from "../Components/Header/Header";
+import MasonryLayout from "../Components/MasonryLayout/MasonryLayout";
+import ContainerCard from "../Components/ContainerCard/ContainerCard";
+import Dropdown from "../Components/Elements/Dropdown/Dropdown";
 
 // import json files
-import images from "./Jsons/Test.json";
+import images from "../Jsons/Test.json";
 
-// Home component
-const Home = () => {
+// Wallpaper component
+const Wallpaper = () => {
   // dropdown items
   const ddItems = [
     {
@@ -65,4 +65,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Wallpaper;

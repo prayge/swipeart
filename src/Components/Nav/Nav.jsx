@@ -14,18 +14,23 @@ const Nav = () => {
       <h1 className={styles["nav-title"]}>SwipeArt</h1>
       <ul className={`flex align-items-center ${styles["navbar-nav"]}`}>
         <li className={`${styles["nav-item"]} ${styles.active}`}>
-          <a href="" className={styles["nav-link"]}>
+          <a href="/" className={styles["nav-link"]}>
             Home
           </a>
         </li>
         <li className={styles["nav-item"]}>
-          <a href="" className={styles["nav-link"]}>
+          <a href="/swipe" className={styles["nav-link"]}>
+            Swipe
+          </a>
+        </li>
+        <li className={styles["nav-item"]}>
+          <a href="/liked" className={styles["nav-link"]}>
             Liked
           </a>
         </li>
         <li className={styles["nav-item"]}>
-          <a href="" className={styles["nav-link"]}>
-            Collections
+          <a href="/wallpaper" className={styles["nav-link"]}>
+            Wallpapers
           </a>
         </li>
       </ul>
