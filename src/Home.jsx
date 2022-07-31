@@ -1,11 +1,10 @@
 import { useState } from "react";
 
 // import styles of this component
-import styles from "./App.module.css";
+import styles from "./Home.module.css";
 
 // import other components to use
 import Header from "./Components/Header/Header";
-import Home from "./Home";
 import MasonryLayout from "./Components/MasonryLayout/MasonryLayout";
 import ContainerCard from "./Components/ContainerCard/ContainerCard";
 import Dropdown from "./Components/Elements/Dropdown/Dropdown";
@@ -13,8 +12,8 @@ import Dropdown from "./Components/Elements/Dropdown/Dropdown";
 // import json files
 import images from "./Jsons/Test.json";
 
-// App component
-const App = () => {
+// Home component
+const Home = () => {
   // dropdown items
   const ddItems = [
     {
@@ -66,4 +65,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
