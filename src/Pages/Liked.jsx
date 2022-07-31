@@ -7,7 +7,6 @@ import styles from "./Liked.module.css";
 import HeaderNoBrick from "../Components/Header/HeaderNoBrick";
 import MasonryLayout from "../Components/MasonryLayout/MasonryLayout";
 import ContainerCard from "../Components/ContainerCard/ContainerCard";
-import Dropdown from "../Components/Elements/Dropdown/Dropdown";
 
 // import json files
 import images from "../Jsons/Test.json";
@@ -28,17 +27,7 @@ const Liked = () => {
     },
   ];
 
-  const [categoryImage, setCategoryImage] = useState(images.categories.all);
-
-  const takeDdTitle = (ddTitle) => {
-    setCategoryImage(() => {
-      let categoryChoose = Object.keys(images.categories).filter((item) => {
-        const titleSplited = ddTitle.toLowerCase().split(" ")[0];
-        return item.toLowerCase().includes(titleSplited);
-      });
-      return [...images.categories[categoryChoose]];
-    });
-  };
+  const likedImages = images.categories.all.filter((x) => x.liked === true);
 
   return (
     <>
@@ -49,13 +38,8 @@ const Liked = () => {
             className={`${styles["gallery-setting"]} flex justify-content-between align-items-center`}
           >
             <h1>Your liked images</h1>
-            <Dropdown
-              title="All Images"
-              items={ddItems}
-              liftingDdTextUp={takeDdTitle}
-            />
           </div>
-          <MasonryLayout images={categoryImage} />
+          <MasonryLayout images={likedImages} />
         </ContainerCard>
       </div>
     </>
